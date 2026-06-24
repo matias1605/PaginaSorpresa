@@ -28,10 +28,10 @@ const steps: Step[] = [
   },
   {
     message: "De seguro ya adivinaste jeje (o tal vez no)",
-    buttonLabel: "Continuar",
+    buttonLabel: "¿Quién podrá ser?",
   },
   {
-    message: "Es Tenshii",
+    message: "Es... Tenshii :D",
     showPhoto: true,
     buttonLabel: "¿Empezar de nuevo?",
   },
