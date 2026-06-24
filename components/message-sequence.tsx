@@ -23,7 +23,7 @@ const steps: Step[] = [
   },
   {
     message:
-      "Te doy una pista: tiene cuatro patitas, es pequeñita y cada día espera volver a verte",
+      "Te daré algunas pistas: tiene cuatro patitas, es pequeñita y cada día espera volver a verte",
     buttonLabel: "Continuar",
   },
   {
