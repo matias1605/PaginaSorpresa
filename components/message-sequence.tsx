@@ -7,7 +7,6 @@ import { Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type Step = {
-  topText?: string;
   message: string;
   showPhoto?: boolean;
   buttonLabel: string;
@@ -15,12 +14,11 @@ type Step = {
 
 const steps: Step[] = [
   {
-    topText: "Psst... dale click a continuar :D",
     message: "Hola Inés, alguien te extraña muchísimo",
     buttonLabel: "Continuar",
   },
   {
-    message: "¿Adivinaste quién es?",
+    message: "¿Adivinas quién es?",
     buttonLabel: "Continuar",
   },
   {
@@ -152,16 +150,6 @@ export function MessageSequence() {
           key={index}
           className="flex w-full max-w-md animate-in fade-in slide-in-from-bottom-6 zoom-in-95 flex-col items-center gap-4 duration-700 ease-out"
         >
-          {step.topText ? (
-            <div className="animate-in fade-in slide-in-from-top-3 zoom-in-95 relative rounded-full bg-primary px-5 py-2 shadow-md duration-500">
-              <p className="text-center text-sm font-medium text-primary-foreground">
-                {step.topText}
-              </p>
-              {/* colita de la burbuja */}
-              <span className="absolute -bottom-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 bg-primary" />
-            </div>
-          ) : null}
-
           {step.showPhoto ? (
             <div className="animate-in fade-in zoom-in-50 spin-in-12 animate-glow overflow-hidden rounded-full border-4 border-card ring-2 ring-primary/50 duration-700">
               <Image
